@@ -41,11 +41,19 @@
 
 ## Review
 
+Start a fresh client session from this project's actual trusted Git root. Trust is
+user-local; do not commit machine-specific trust paths or overwrite user config.
+This client's standalone role discovery works without explicit config_file
+registration once the actual project root is trusted.
+
 When independent review is requested, ask the parent to invoke project-native
 `scientific_reviewer` for methodology/evidence and `code_reviewer` for code risks.
 Give the base/head SHA and primary materials. Both return read-only findings;
 they do not edit, run experiments or publish comments. Their permissions inherit
 from the parent session; choose parent read-only permissions when required.
+Use the actual native agent_type selector with fork_turns="none" for each role,
+and wait for both independent results. Task names and copied TOML instructions
+are not proof of native role binding.
 
 ## Code Review Rules
 

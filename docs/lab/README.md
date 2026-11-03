@@ -33,7 +33,16 @@ python tools/lab/check_codex.py
 
 两个本地角色 `scientific_reviewer`、`code_reviewer` 需在项目新 Codex 会话
 验证实际加载；它们不会自动变成 GitHub 云端 reviewer。
+客户端必须信任实际 Git 根目录；父目录或旧部署目录的信任记录不能代替。
+从项目根启动新的会话，或由用户显式选择只信任该根目录的只读审核 profile。
+信任配置属于用户本地设置，不提交到项目，也不自动覆盖现有用户配置。
+
+CLI 0.166.0 的单变量对照和真实审核确认：受信任目录可直接发现现有
+`.codex/agents/*.toml`，不必新增项目 `.codex/config.toml`。显式 config_file
+注册也是可用方案，但不是本客户端的必需条件。根因、实际线程和审核结果见
+中央仓库的 `docs/native-reviewer-acceptance.md`。
+
 云端 Codex Code Review、真实 Actions 运行和合并规则分别验证。
 单人阶段拟使用 PR + required CI 门禁，必需真人批准为 0；双人批准尚未验证。
 
-当前本地准备不代表远程部署、AI 审核或合并阻断已经成功。
+本地原生角色验收不代替本修复发布后的 CI，也不表示任何科学实验已通过。

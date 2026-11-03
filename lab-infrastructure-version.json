@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
-  "template_version": "0.1.0",
+  "template_version": "0.1.1",
   "source_repository": "https://github.com/Alex-research-lab-test/lab-research-infrastructure",
-  "source_commit": "57cbc84535ec43729ea171a58d7b078b403cf2b4",
-  "adopted_on": "2026-11-02",
+  "source_commit": "9538d8286ec170377727690b801a4c0a89865e5a",
+  "adopted_on": "2026-11-03",
   "local_adaptations": [
     "AGENTS.md documents the Diffusion Policy upstream baseline, protected local work and hardware/data execution limits.",
     "Collaboration CI validates governance files only; no historical algorithm reformatting or training dependency installation.",
     "The metadata validator is copied to tools/lab/check_codex.py.",
-    "Research templates are copied to docs/lab/templates; docs/lab/README.md describes the test adoption."
+    "Research templates are copied to docs/lab/templates; docs/lab/README.md describes the test adoption.",
+    "Document trusted actual Git-root discovery and independent native reviewer invocation; preserve standalone TOML and do not require explicit registration."
   ]
 }
