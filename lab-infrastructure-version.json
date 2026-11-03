@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "template_version": "0.1.1",
+  "template_version": "0.2.0",
   "source_repository": "https://github.com/Alex-research-lab-test/lab-research-infrastructure",
-  "source_commit": "71eb0453ab9fbf46fe3ff982cde93238f6643ba6",
+  "source_commit": "1d99e54f26dc02df1ad46540f396bb760f5b09a6",
   "adopted_on": "2026-11-03",
   "local_adaptations": [
     "AGENTS.md documents the Diffusion Policy upstream baseline, protected local work and hardware/data execution limits.",
@@ -10,6 +10,7 @@
     "The metadata validator is copied to tools/lab/check_codex.py.",
     "Research templates are copied to docs/lab/templates; docs/lab/README.md describes the test adoption.",
     "Document trusted actual Git-root discovery and independent native reviewer invocation; preserve standalone TOML and do not require explicit registration.",
-    "Risk-based native review policy and review-record template synchronized; pilot PR #3 trusted-root guidance preserved."
+    "Risk-based native review policy and review-record template synchronized; pilot PR #3 trusted-root guidance preserved.",
+    "General research-task understanding, necessary clarification and route selection adopted; canonical Skill and research-task template synchronized without changing native review policy."
   ]
 }
